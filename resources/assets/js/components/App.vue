@@ -1,26 +1,6 @@
 <template>
 <main>
-  <nav class="navbar has-shadow">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">Handyman</a>
-
-            <div class="navbar-burger burger" data-target="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start"></div>
-
-            <div class="navbar-end">
-                
-            </div>
-        </div>
-    </div>
-  </nav>
+  <hm-nav></hm-nav>
   <div class="container">
       
   </div>
@@ -33,9 +13,14 @@
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
+  import Nav from './layout/Nav.vue';
+  
+  export default {
+    components: {
+      hmNav: Nav
+    },
+    mounted() {
+        console.log('Component mounted.')
     }
+  }
 </script>
