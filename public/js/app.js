@@ -968,8 +968,14 @@ module.exports = __webpack_require__(50);
 
 /***/ }),
 /* 10 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_App_vue__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_App_vue__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -979,7 +985,7 @@ module.exports = __webpack_require__(50);
 
 __webpack_require__(11);
 
-window.Vue = __webpack_require__(34);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -987,10 +993,13 @@ window.Vue = __webpack_require__(34);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(37));
 
-var app = new Vue({
-  el: '#app'
+
+var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
+  el: '#app',
+  render: function render(h) {
+    return h(__WEBPACK_IMPORTED_MODULE_1__components_App_vue___default.a);
+  }
 });
 
 __webpack_require__(41);
@@ -40548,7 +40557,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/ExampleComponent.vue"
+Component.options.__file = "resources/assets/js/components/App.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -40557,9 +40566,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7168fb6a", Component.options)
+    hotAPI.createRecord("data-v-8142f38c", Component.options)
   } else {
-    hotAPI.reload("data-v-7168fb6a", Component.options)
+    hotAPI.reload("data-v-8142f38c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -40700,6 +40709,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -40722,20 +40749,37 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [
-              _vm._v("Example Component")
+    return _c("main", [
+      _c("nav", { staticClass: "navbar has-shadow" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "navbar-brand" }, [
+            _c("a", { staticClass: "navbar-item", attrs: { href: "/" } }, [
+              _vm._v("Handyman")
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                    I'm an example component!\n                "
-              )
-            ])
+            _c(
+              "div",
+              {
+                staticClass: "navbar-burger burger",
+                attrs: { "data-target": "navMenu" }
+              },
+              [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "navbar-menu", attrs: { id: "navMenu" } }, [
+            _c("div", { staticClass: "navbar-start" }),
+            _vm._v(" "),
+            _c("div", { staticClass: "navbar-end" })
           ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }),
+      _vm._v(" "),
+      _c("footer", { staticClass: "footer" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("p", [_vm._v("© 2018 Handyman.")])
         ])
       ])
     ])
@@ -40746,7 +40790,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7168fb6a", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-8142f38c", module.exports)
   }
 }
 
