@@ -1,7 +1,9 @@
 <template>
+  <transition name="fade">
   <div>
     <h1>Home</h1>
   </div>
+  </transition>
 </template>
 
 <script>
@@ -10,5 +12,5 @@
 </script>
 
 <style scoped>
-
+  
 </style>
