@@ -1,23 +1,21 @@
 <template>
-<main>
-  <hm-nav></hm-nav>
-  <div class="container">
-      
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2018 Handyman.</p>
-    </div>
-  </footer>
-</main>
+  <main>
+    <hm-nav></hm-nav>
+    
+    <div class="container"></div>
+    
+    <hm-footer></hm-footer>
+  </main>
 </template>
 
 <script>
   import Nav from './layout/Nav.vue';
+  import Footer from './layout/Footer.vue';
   
   export default {
     components: {
-      hmNav: Nav
+      hmNav: Nav,
+      hmFooter: Footer
     },
     mounted() {
         console.log('Component mounted.')
