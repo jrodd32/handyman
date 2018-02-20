@@ -43819,7 +43819,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -43832,6 +43832,27 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Links_vue__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Links_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Links_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -44048,7 +44069,7 @@ var render = function() {
           })
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "navbar-end" })
+        _vm._m(1)
       ])
     ])
   ])
@@ -44066,6 +44087,63 @@ var staticRenderFns = [
       },
       [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "navbar-end" }, [
+      _c("div", { staticClass: "navbar-item" }, [
+        _c("div", { staticClass: "field is-grouped" }, [
+          _c("p", { staticClass: "control" }, [
+            _c(
+              "a",
+              {
+                staticClass: "bd-tw-button button",
+                attrs: {
+                  "data-social-network": "Twitter",
+                  "data-social-action": "tweet",
+                  "data-social-target": "http://localhost:4000",
+                  target: "_blank",
+                  href:
+                    "https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&hashtags=bulmaio&url=http://localhost:4000&via=jgthms"
+                }
+              },
+              [
+                _c("span", { staticClass: "icon" }, [
+                  _c("i", { staticClass: "fas fa-question-circle" })
+                ]),
+                _vm._v(" "),
+                _c("span", [
+                  _vm._v(
+                    "\n                    Ask a question\n                  "
+                  )
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "control" }, [
+            _c(
+              "a",
+              {
+                staticClass: "button is-primary",
+                attrs: {
+                  href: "https://github.com/jgthms/bulma/archive/0.5.1.zip"
+                }
+              },
+              [
+                _c("span", { staticClass: "icon" }, [
+                  _c("i", { staticClass: "fas fa-calculator" })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Request a quote")])
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
