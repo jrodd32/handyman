@@ -2,7 +2,7 @@
   <nav class="navbar has-shadow">
     <div class="container">
         <div class="navbar-brand">
-            <a href="/" class="navbar-item">Handyman</a>
+            <router-link to="/" class="navbar-item">Handyman</router-link>
 
             <div class="navbar-burger burger" data-target="navMenu">
                 <span></span>

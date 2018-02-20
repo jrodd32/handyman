@@ -2,7 +2,11 @@
   <main>
     <hm-nav></hm-nav>
     
-    <div class="container"></div>
+    <div class="container">
+      <!-- route outlet -->
+      <!-- component matched by the route will render here -->
+      <router-view></router-view>
+    </div>
     
     <hm-footer></hm-footer>
   </main>

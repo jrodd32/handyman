@@ -8,19 +8,44 @@
 require('./bootstrap');
 
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+Vue.use(VueRouter);
 
-import App from './components/App.vue'
+import App from './components/App.vue';
+import Home from './components/pages/Home.vue';
+import Services from './components/pages/Services.vue';
+import Testimonials from './components/pages/Testimonials.vue';
+import Gallery from './components/pages/Gallery.vue';
+
+const routes = [
+  {
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/services',
+    component: Services
+  },
+  {
+    path: '/testimonials',
+    component: Testimonials
+  },
+  {
+    path: '/gallery',
+    component: Gallery
+  }
+];
+
+const router = new VueRouter({
+  mode: 'history',
+  routes
+});
 
 const app = new Vue({
-    el: '#app',
-    render: h => h(App)
-});
+  router,  
+  render: h => h(App)
+}).$mount('#app');
 
 
 require('./bulma-extensions');
